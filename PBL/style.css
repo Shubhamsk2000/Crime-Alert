@@ -1,0 +1,33 @@
+/* This id is used to style the website name in header */
+#sitename{
+    color: rgba(11, 78, 222, 0.956);
+}
+
+/* This selector applies a gradient background with the colors of the Indian flag */
+.gradient_background{
+    /* Use shorthand property for background */
+    background: linear-gradient(298deg, #0fc52d, #fafdf8, #f39c0c);
+    background-size: 600% 600%;
+
+    /* Use consistent casing and spacing for properties and values */
+    -webkit-animation: indian-tricolor 30s ease infinite;
+    -moz-animation: indian-tricolor 30s ease infinite;
+    animation: indian-tricolor 30s ease infinite;
+}
+
+/* This animation creates a smooth transition of the background colors */
+@-webkit-keyframes indian-tricolor {
+    0% { background-position: 0% 19%; }
+    50% { background-position: 100% 82%; }
+    100% { background-position: 0% 19%; }
+}
+@-moz-keyframes indian-tricolor {
+    0% { background-position: 0% 19%; }
+    50% { background-position: 100% 82%; }
+    100% { background-position: 0% 19%; }
+}
+@keyframes indian-tricolor {
+    0% { background-position: 0% 19%; }
+    50% { background-position: 100% 82%; }
+    100% { background-position: 0% 19%; }
+}
