@@ -10,9 +10,9 @@
     background-size: 600% 600%;
 
     /* Use consistent casing and spacing for properties and values */
-    -webkit-animation: indian-tricolor 30s ease infinite;
-    -moz-animation: indian-tricolor 30s ease infinite;
-    animation: indian-tricolor 30s ease infinite;
+    -webkit-animation: indian-tricolor 20s ease infinite;
+    -moz-animation: indian-tricolor 20s ease infinite;
+    animation: indian-tricolor 20s ease infinite;
 }
 
 /* This animation creates a smooth transition of the background colors */
