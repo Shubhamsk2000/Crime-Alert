@@ -10,9 +10,9 @@
     background-size: 600% 600%;
 
     /* Use consistent casing and spacing for properties and values */
-    -webkit-animation: indian-tricolor 20s ease infinite;
-    -moz-animation: indian-tricolor 20s ease infinite;
-    animation: indian-tricolor 20s ease infinite;
+    -webkit-animation: indian-tricolor 25s ease infinite;
+    -moz-animation: indian-tricolor 25s ease infinite;
+    animation: indian-tricolor 25s ease infinite;
 }
 
 /* This animation creates a smooth transition of the background colors */
@@ -30,4 +30,12 @@
     0% { background-position: 0% 19%; }
     50% { background-position: 100% 82%; }
     100% { background-position: 0% 19%; }
+}
+
+
+
+/* Custom CSS for carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Inverts the color of the arrow icon */
 }
