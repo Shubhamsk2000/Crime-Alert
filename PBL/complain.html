@@ -1,211 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crime Reporting System- Report A Crime</title>
-    <!--		<link rel="stylesheet" href="style.css">		-->
-	<style>
-		*{
-			margin: 0px;
-			padding:0px;
-			box-sizing: border-box;
-			font-family: sans-serif;
-			
-		}
-		/* NAVIGATION BAR */
-		nav{
-			width: 100%;
-			height: 75px;
-			background-color: black;
-			line-height: 75px;
-			padding:0px 100px;
-			position: fixed;
-			z-index : 1;
-		}
-		nav .logo{
-			font-weight: bold;
-			letter-spacing: 1.5px;
-		}
-		nav .logo p{
-			font-size: 30px;
-			float: left;
-			color: white;
-			text-transform: uppercase;
-		}
-		nav ul{
-			float:right;
-		}
-		nav ul li{
-			display: inline-block;
-			list-style: none;
-		}
-		nav ul li a{
-			color: white;
-			text-decoration: none;
-			font-size: 18px;
-			text-transform: uppercase;
-			padding: 0px 32px;
-		}
-		nav ul li a:hover{
-			color:#cccccc;
-		}
-		
-		.image{
-			width: 100%;
-			position: absolute;
-			z-index: -1;
-			opacity:0.7;
-		}
-		.heading{
-			color: blue;
-			background-color: white;
-			font-weight: 600;
-			font-size: 1.5em;
-			margin-bottom: 20px;
-			border-bottom: 4px solid black;
-			display: inline-block;
-			letter-spacing: 1px;
-			
-		}
-		
-		/* CONTAINER */
-		.container{
-			max-width: 80%;
-			/*background-color: rgb(198, 152, 241);*/
-			padding: 34px;
-			margin: auto;
-		}
-		.container h1, p{
-			text-align: center;
-		}
-		p{
-			font-size: 17px;
-		}
-
-		input, textarea{
-			border: 2px solid black;
-			border-radius: 6px;
-			outline: none;
-			width: 80%;
-			margin: 11px 0px;
-			padding: 7px;
-			font-size: 16px;
-		}
-
-		form{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-		}
-		.btn{
-			color:white;
-			background:purple;
-			padding: 10px;
-			font-size: 16px;
-			border: 2px solid white;
-			border-radius: 14px;
-			cursor: pointer;
-		}
-		.submitmsg{
-			font-size: 25px;
-			color: rgb(25, 102, 25);
-		}
-		
-		
-		
-		/* FOOTER */
-		.footer{
-			background-color: black;
-			color: white;
-			height: 400px;
-			bottom: 50px;
-			left: 0;
-			position: sticky;
-			
-		}
-		
-		.footer .footer-content{
-			
-			height: 350px;
-		}
-		.footer .footer-bottom{
-			background-color: rgb(153,51,153);
-			color: rgb(255,255,153);
-			height: 50px;
-			text-align: center;
-			position: fixed;
-			bottom: 0;
-			left: 0;
-			padding-top: 20px;
-			width: 100%;
-		}
-		
-	
-	</style>
-
-</head>
-<body>
-	<img src="image/img1.jpg" class="image" alt="background image"> 
-	<nav>
-		<div class="logo">
-			<p> Rakshya </p>
-		</div>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="adminlogin.html">ADMINISTRATOR LOGIN</a></li>
-		</ul>
-	</nav>
-	<br><br><br><br>
-	
-	<div class="page-wrapper">
-	
-		
-		<div class="container">
-			<span class="heading"> <h1>Report A Crime </h1> </span>
-    
-			<br>
-
-			<form action="index.php" method="POST">
-			
-				<input type="text" name="name" id="name" placeholder="Enter Your Name" required>
-				<input type="email" name="email" id="email" placeholder="Enter Your Email ID" required>
-				<input type="text" name="age" id="age" placeholder="Enter Your Age" required>
-				<input type="text" name="gender" id="gender" placeholder="Enter Your Gender (M/F)" required>
-				<input type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number (max. 10 characters)" required>
-				<input type="aadhaar" name="aadhaar" id="aadhaar" placeholder="Enter Your AADHAAR Enrollment Number (max. 16 characters)" required>
-				<input type="place" name="place" id="place" placeholder="Enter the Location of the Crime" required>
-                <input type="type" name="type" id="type" placeholder="Enter the Type of Crime" required>
-				<textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter the details of the crime, i.e., how did the attack take place, the details of the victims, any information about the criminals, and the details of the eyewitnesses, if present at the location. " required></textarea>
-				<button class="btn">Submit </button>
-				<!-- <button class="btn">Reset </button>  -->
-			</form>
-		
-		</div>
-		
-
-	
-		<!--FOOTER 
-		<div class="footer">
-			<div class="footer-content">
-				<div class="footer-content about"> 
-				
-				</div>
-				<div class="footer-content developers"> 
-				
-				</div>
-				<div class="footer-content contact-form"> 
-				
-				</div>
-			</div>
-			<div class="footer-bottom">
-				&copy; reportacrime.com | Designed by Divya Joshi
-			</div>
-		</div> -->
-		
-	</div>
-</body>
-</head>
+<html>
+  <head>
+    <title>Rakshya</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      }
+      h1 {
+      margin: 15px 0;
+      font-weight: 400;
+      color: #0666a3;
+      }
+      h4 {
+      margin-bottom: 4px;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 3px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px #ccc; 
+      }
+      input, select, textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      input:hover, textarea:hover, select:hover {
+      outline: none;
+      border: 1px solid #095484;
+      }
+      select {
+      padding: 7px 0;
+      background: transparent;
+      }
+      textarea {
+      margin-bottom: 3px;
+      }
+      .item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0;
+      }
+      input[type="date"]::-webkit-inner-spin-button {
+      display: none;
+      }
+      .item i, input[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      font-size: 20px;
+      color: #a9a9a9;
+      }
+      .item i {
+      left: 94%;
+      top: 30px;
+     z-index: 1;
+      }
+      [type="date"]::-webkit-calendar-picker-indicator {
+      left: 93%;
+      z-index: 2;
+      opacity: 0;
+      cursor: pointer;
+      }
+      .street, .desired-outcome-item, .complaint-details-item {
+      display: flex;
+      flex-wrap: wrap;
+      }
+      .street input {
+      margin-bottom: 10px;
+      }
+      small {
+      display: block;
+      line-height: 16px;
+      opacity: 0.7;
+      }
+      .btn-block {
+      margin-top: 20px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px; 
+      -moz-border-radius: 5px; 
+      border-radius: 5px; 
+      background-color: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background-color: #0666a3;
+      }
+      @media (min-width: 568px) {
+      input {
+      width: calc(35% - 20px);
+      margin: 0 0 0 8px;
+      }
+      select {
+      width: calc(50% - 8px);
+      margin: 0 0 10px 8px;
+      }
+      .item {
+      flex-direction: row;
+      align-items: center;
+      }
+      .item p {
+      width: 30%;
+      }
+      .item i {
+      left: 61%;
+      top: 25%;
+      }
+      [type="date"]::-webkit-calendar-picker-indicator {
+      left: 60%;
+      }
+      .street, .desired-outcome-item, .complaint-details-item {
+      width: 70%;
+      }
+      .street input {
+      width: calc(50% - 20px);
+      }
+      .street .street-item {
+      width: 100%;
+      }
+      .address p, .desired-outcome p, .complaint-details p {
+      align-self: flex-start;
+      margin-top: 6px;
+      }
+      .desired-outcome-item, .complaint-details-item {
+      margin-left: 12px;
+      }
+      textarea {
+      width: calc(100% - 6px);
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="title">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom">
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-4"><h1 id="sitename">Rakshya</h1></span>
+              </a>
+        
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="Home" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="userDashboard.html" class="nav-link"> User Dashboard</a></li>
+              </ul>
+            </header>
+          </div>
+    </section>
+    <section class = "container">
+    <div class="testbox">
+      <form action="/">
+        <h1>Complaint Form</h1>
+        <p>Please send us details about the incident you would like to report. Our Complaint Center will analyze your complaint and take the appropriate measures in order that the reported situation will not occur at any other time in the future.</p>
+        <hr/>
+        <div class="item">
+          <p>Date of complaint</p>
+          <input type="date" name="name" required/>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <p>Name</p>
+          <input type="text" name="name" placeholder="First" />
+          <input type="text" name="name" placeholder="Last" />
+        </div>
+        <div class="item">
+          <p>Email</p>
+          <input type="text" name="name"/>
+        </div>
+        <div class="item address">
+          <p>Address</p>
+          <div class="street">
+            <input class="street-item" type="text" name="name" placeholder="Street address" />
+            <input  class="street-item" type="text" name="name" placeholder="Street addres line 2" />
+            <input type="text" name="name" placeholder="City" />
+            <input type="text" name="name" placeholder="Region" />
+            <input type="text" name="name" placeholder="Postal / zip code" />
+            <!-- <select>
+              <option value="">Country</option>
+              <option value="1">Russia</option>
+              <option value="2">Germany</option>
+              <option value="3">France</option>
+              <option value="4">Armenia</option>
+              <option value="5">USA</option>
+            </select> -->
+          </div>
+        </div>
+        <div class="item">
+          <p>Date of the reported incident</p>
+          <input type="date" name="name" required/>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item location">
+          <p>Incident location</p>
+          <input type="text" name="name"/>
+        </div>
+        <div class="item complaint-details">
+          <p>Complaint details</p>
+          <div class="complaint-details-item">
+            <textarea rows="5"></textarea>
+          </div>
+        </div>
+        <div class="item desired-outcome">
+          <p>Desired outcome</p>
+          <div class="desired-outcome-item">
+            <textarea rows="5"></textarea>
+            <small>By signing you declare that all information you have entered is truthful and accurate.</small>
+          </div>
+        </div>
+        <h4>Your signature</h4>
+        <textarea rows="5"></textarea>
+        <small>By signing you declare that all information you have entered is truthful and accurate.</small>
+        <div class="btn-block">
+          <button type="submit" href="/">Send</button>
+        </div>
+      </form>
+    </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 PBL Project Team E09_01</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./SVGs/twitter-x.svg" alt="Twitter"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./SVGs/instagram.svg" alt="Instagram"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./SVGs/envelope.svg" alt="Gmail"></a></li>
+              </ul>
+            </footer>
+          </div>
+    </section>
+  </body>
+</html>
