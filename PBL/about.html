@@ -4,117 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crime Management and Reporting</title>
-	<style>
-		*{
-			margin: 0px;
-			padding:0px;
-			box-sizing: border-box;
-			font-family: sans-serif;
-			
-		}
-		nav{
-			width: 100%;
-			height: 75px;
-			background-color: black;
-			line-height: 75px;
-			padding:0px 100px;
-			position: fixed;
-			z-index : 1;
-		}
-		nav .logo{
-			font-weight: bold;
-			letter-spacing: 1.5px;
-		}
-		nav .logo p{
-			font-size: 30px;
-			float: left;
-			color: white;
-			text-transform: uppercase;
-		}
-		nav ul{
-			float:right;
-		}
-		nav ul li{
-			display: inline-block;
-			list-style: none;
-		}
-		nav ul li a{
-			color: white;
-			text-decoration: none;
-			font-size: 18px;
-			text-transform: uppercase;
-			padding: 0px 32px;
-		}
-		nav ul li a:hover{
-			color:#cccccc;
-		}
-		
-		.image{
-			width: 100%;
-			position: absolute;
-			z-index: -1;
-			opacity:0.7;
-		}
-		
-		.wrapper{
-			margin: 15px;
-		}
-		.wrapper h1{
-			color: white;
-			background: purple;
-			border-radius: 12px;
-		}
-		.wrapper p{
-			font-size:20px;
-			font-weight: bold;
-			margin: 25px;
-			color: purple;
-		}
-		.wrapper ul {
-			margin: 30px;
-			font-size:20px;
-			font-weight: bold;
-		}
-		.wrapper ul li{
-			border-bottom: 2px solid violet;
-		}
-		.wrapper ul .contact{
-			font-size:20px;
-			color: blue;
-			border: none;
-		}
-		.wrapper ul .contact li{
-			display: inline-block;
-			padding: 0px 32px;
-		}
-	
-	</style>
-
+    <title>Rakshya</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<nav>
-		<div class="logo">
-			<p> RAKSHYA </p>
-		</div>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="">About</a></li>
-			<li><a href="adminlogin.html">ADMINISTRATOR LOGIN</a></li>
-		</ul>
-	</nav>
-	<br><br><br><br><br>
+	<section id="title">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom">
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-4"><h1 id="sitename">Rakshya</h1></span>
+              </a>
+        
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+              </ul>
+            </header>
+          </div>
+    </section>
 	
-	<div class="wrapper">
-		<h1> About </h1>
-		<p>
-			The Objective of Crime Reporting System is to develop a web based program using which people can report crime online. It provides the facility of sharing the details of crime scenes to ensure that the police takes action immediately. It also supplies the advice of missing persons, most wanted criminals and security tips for the awareness of people.<br>
-			Presently, there is no online web application available to report crime online. In order to report any complaints associated with crime, people have to contact the nearest police station. People of any specific city are not aware of the crime related matters such as list of most wanted criminals of their town, newest crime related news, missing persons of the area etc..People need to view News Channels or read Newspapers for such crime related details. Thus we can say that the present platform is manual and does not supply all the information from a single source.<br>
-			This Crime Reporting System is an approach to allow the users to Register their complaints. It also allows the Admin/Police to View the status of these complaints and to Delete the complaints after resolving them.
-			
-
-		
-		</p>				
+	<div class="container col-xxl-8 px-4 py-5 ">
+		<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+		  <div class="col-10 col-sm-8 col-lg-6">
+			<img src="./Images_PBL/Bharti.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+		  </div>
+		  <div class="col-lg-6">
+			<h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About this initiative</h1>
+			<p class="lead">The Objective of Crime Reporting System is to develop a web based program using which people can report crime online. It provides the facility of sharing the details of crime scenes to ensure that the police takes action immediately. It also supplies the advice of missing persons, most wanted criminals and security tips for the awareness of people.
+			Presently, there is no online web application available to report crime online. People of any specific city are not aware of the crime related matters such as list of most wanted criminals of their town, newest crime related news, missing persons of the area etc. Thus we can say that the present platform is manual and does not supply all the information from a single source.
+			This Crime Reporting System is an approach to allow the users to Register their complaints. It also allows the Admin/Police to View the status of these complaints and to Delete the complaints after resolving them.</p>
+		  </div>
+		</div>
+	  </div>			
 						
 		<br><h1> Contact the Developers </h1>
 		<p>
@@ -148,5 +70,25 @@
 		
 	</div>
 	
+	<section id="footer">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 PBL Project Team E09_01</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./SVGs/twitter-x.svg" alt="Twitter"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./SVGs/instagram.svg" alt="Instagram"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./SVGs/envelope.svg" alt="Gmail"></a></li>
+              </ul>
+            </footer>
+          </div>
+    </section>
+  </section>
+
 </body>
-</head>
+</html>
